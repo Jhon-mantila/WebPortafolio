@@ -1,24 +1,25 @@
 const menuMobile = document.querySelector('.mobile-menu');
 const burgerMenu = document.querySelector('.menu');
 
+const arrowCircle = document.querySelector('.arrow-circle');
+const cardFlap = document.querySelector('.card-flap');
+
 burgerMenu.addEventListener('click', toogleMobileMenu);
+
+arrowCircle.addEventListener('click', toogleCardFlap);
 
 function toogleMobileMenu(){
     menuMobile.classList.toggle('inactive');
 }
 
-const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 3,
-    spaceBetween: 0,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
+function toogleCardFlap(){
+  cardFlap.classList.toggle('inactive-flap');
+}
+
 
 
   // JavaScript
-var cards = document.querySelector('.cards');
+/*var cards = document.querySelector('.cards');
 var cardItems = document.querySelectorAll('.card');
 var zindex = 10;
 
@@ -47,5 +48,5 @@ cardItems.forEach(function(card) {
 
     zindex++;
   });
-});
+});*/
 

@@ -7,18 +7,21 @@
     --very-light-pink:#bebaba;
     --text-input-field:#f7f7f7;
     --hospital-blue:#3680db;
+    --bone-color: #fbfaf8;
     --sm:14px;
     --md:16px;
     --lg:18px;
-    --card-size:240px;
+    --card-size:300px;
 }
 body{
     font-family: 'Quicksand', sans-serif;
     margin: 0px;
+    background-color: var(--bone-color);
 }
 
 .inactive {
     display: none;
+    
 }
 /*----------------Menu----------------*/
 .menu{
@@ -170,7 +173,88 @@ nav{
 }
 
 /********************************************************************/
-/* CSS */
+
+.card {
+    background-color: var(--white);
+    width: var(--card-size);
+}
+
+.inactive-flap{
+    opacity: 0;
+    height: 0px;
+    transition: all 1.60s 1.60s ease-out;
+}
+
+.card .img-principal{
+    display: grid;
+    place-items: center;
+}
+
+.card .img-principal img{
+    width: 100%;
+}
+
+.card .card-title{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.card .card-title .title-left, .card .card-title .title-right{
+    display: flex;
+}
+
+
+.card .card-title .title-left h2 > p{
+    font-size: var(--md);
+    margin: 0;
+}
+
+.card .card-title .title-right .arrow-circle{
+    margin-top: 10px;
+    background-color: var(--hospital-blue);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card .card-title .title-right .arrow-circle > span{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--white);
+    
+}
+
+.card-flap {
+    overflow: hidden;
+    transition: all 0.60s 0.60s ease-out;
+    /*opacity: 1;
+    height: auto;*/
+}
+
+.description{
+    padding: 10px;
+}
+.card-actions{
+    display: flex;
+    justify-content: center;
+}
+.card-actions .btn{
+    background-color: var(--hospital-blue);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* CSS 
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -198,4 +282,4 @@ nav{
   
   .card.active img {
     transform: scale(1.2);
-  }
+  }*/
