@@ -152,37 +152,35 @@ nav{
     color: var(--hospital-blue);
 }
 
-@media(max-width:640px){
-    .menu{
-        display: block;
-        
-    }
-
-    .navbar-left ul{
-        display: none;
-    }
-    .navbar-right .navbar-email{
-        display: none;
-    }
+/*Contenido del portafolio*/
+div.contenido{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    justify-content: center;
+    
 }
 
-@media(min-width:641px){
-    .mobile-menu{
-        display: none;
-    }
+.contenido section .cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--card-size));
+    gap: 50px;
+    place-content: center;
+    
 }
 
-/********************************************************************/
+/*---------------------card---------------------*/
 
-.card {
-    background-color: var(--white);
+.cards-container .card {
+   
     width: var(--card-size);
+    overflow: hidden;
 }
 
 .inactive-flap{
     opacity: 0;
     height: 0px;
-    transition: all 1.60s 1.60s ease-out;
+    transition: all 0.30s 0.30s ease-out;
 }
 
 .card .img-principal{
@@ -195,6 +193,7 @@ nav{
 }
 
 .card .card-title{
+    background-color: var(--white);
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
@@ -231,12 +230,13 @@ nav{
 
 .card-flap {
     overflow: hidden;
-    transition: all 0.60s 0.60s ease-out;
+    transition: all 0.30s 0.30s ease-out;
+    background-color: var(--white);
     /*opacity: 1;
     height: auto;*/
 }
 
-.description{
+.card-description{
     padding: 10px;
 }
 .card-actions{
@@ -253,6 +253,28 @@ nav{
     display: inline-block;
     font-size: 16px;
 }
+
+@media(max-width:640px){
+    .menu{
+        display: block;
+        
+    }
+
+    .navbar-left ul{
+        display: none;
+    }
+    .navbar-right .navbar-email{
+        display: none;
+    }
+}
+
+@media(min-width:641px){
+    .mobile-menu{
+        display: none;
+    }
+}
+
+
 
 /* CSS 
 .cards {
