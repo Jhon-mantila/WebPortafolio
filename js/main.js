@@ -29,15 +29,22 @@
 let person = [
   {
     imagen: 'https://3ztech.com.co/wp-content/uploads/2022/11/pexels-dominika-roseclay-905163-scaled.jpg',
-    titulo: 'Card Title',
-    profesion: 'Profesió',
+    titulo: 'Jessika Vallejo',
+    profesion: 'Admon Negocios Internacionales',
     descripcion: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus ex autem eos earum ipsam dolorem impedit, et maxime sunt animi voluptatem tenetur odio temporibus eligendi aspernatur id, recusandae iure sint?',
     url: '#'
   },
   {
     imagen: 'https://3ztech.com.co/wp-content/uploads/2022/11/pexels-dominika-roseclay-905163-scaled.jpg',
-    titulo: 'Card Title',
-    profesion: 'Profesió',
+    titulo: 'Jhon Mantilla',
+    profesion: 'Ing. Sistemas',
+    descripcion: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus ex autem eos earum ipsam dolorem impedit, et maxime sunt animi voluptatem tenetur odio temporibus eligendi aspernatur id, recusandae iure sint?',
+    url: '#'
+  },
+  {
+    imagen: 'https://3ztech.com.co/wp-content/uploads/2022/11/pexels-dominika-roseclay-905163-scaled.jpg',
+    titulo: 'Zhoe Acevedo',
+    profesion: 'Tec. Análisis y Desarrollo',
     descripcion: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus ex autem eos earum ipsam dolorem impedit, et maxime sunt animi voluptatem tenetur odio temporibus eligendi aspernatur id, recusandae iure sint?',
     url: '#'
   }
@@ -144,15 +151,12 @@ function toogleMobileMenu(){
 }
 
 function idCardFlap(card){
-  console.log("card: "+card);
+  //console.log("card: "+card);
   idArrowCircle = document.querySelector('#'+card);
 
-  console.log(idArrowCircle);
+  //console.log(idArrowCircle);
   idArrowCircle.classList.toggle('inactive-flap');
-  //return card;
-  /*const cardid = document.querySelector('#'+card);
-  console.log (cardid);
-  cardid.classList.toggle('inactive-flap');*/
+
 }
 
 function toogleCardFlap(){
