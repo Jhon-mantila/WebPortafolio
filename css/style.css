@@ -153,21 +153,23 @@ nav{
 }
 
 /*Contenido del portafolio*/
-div.contenido{
-    display: flex;
-    flex-direction: column;
-    flex-flow: column wrap;
-    justify-content: center;
-    
+
+.contenido .element1, .contenido .element1{
+    margin: 20px;
 }
 
-.contenido section .cards-container{
-    display: grid;
+.cards-container{
+    /*display: grid;
     grid-template-columns: repeat(auto-fill, var(--card-size));
     gap: 50px;
-    place-content: center;
-    
+    place-content: center;*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas */
+    gap:50px;
+ 
 }
+
 
 /*---------------------card---------------------*/
 
@@ -235,17 +237,21 @@ div.contenido{
     background-color: var(--white);
     /*opacity: 1;
     height: auto;*/
+  
 }
 
 .card-description{
     padding: 10px;
+
 }
 .card-description > p{
     font-size: var(--sm);
+    
 }
 .card-actions{
     display: flex;
     justify-content: center;
+  
 }
 .card-actions .btn{
     background-color: var(--hospital-blue);
@@ -256,7 +262,10 @@ div.contenido{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+
 }
+
+
 
 @media(max-width:640px){
     .menu{

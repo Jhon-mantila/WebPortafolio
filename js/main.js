@@ -31,22 +31,22 @@ let person = [
     imagen: 'https://3ztech.com.co/wp-content/uploads/2022/11/pexels-dominika-roseclay-905163-scaled.jpg',
     titulo: 'Jessika Vallejo',
     profesion: 'Admon Negocios Internacionales',
-    descripcion: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus ex autem eos earum ipsam dolorem impedit, et maxime sunt animi voluptatem tenetur odio temporibus eligendi aspernatur id, recusandae iure sint?',
-    url: '#'
+    descripcion: 'Hola me llamo Jessika Vallejo. Me atrae mucho el mundo digital. Próxima a recibir el título de Administradora de Negocios Internacionales...',
+    url: 'https://jekavavel.3ztech.com.co/'
   },
   {
-    imagen: 'https://3ztech.com.co/wp-content/uploads/2022/11/pexels-dominika-roseclay-905163-scaled.jpg',
+    imagen: 'https://3ztech.com.co/wp-content/uploads/2022/11/code-g4c89e7e8f_640.jpg',
     titulo: 'Jhon Mantilla',
     profesion: 'Ing. Sistemas',
-    descripcion: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus ex autem eos earum ipsam dolorem impedit, et maxime sunt animi voluptatem tenetur odio temporibus eligendi aspernatur id, recusandae iure sint?',
-    url: '#'
+    descripcion: 'Soy un creador de herramientas digitales y un entusiasta por el mundo de la programación, me gusta el arte digital y espero con ansias crear un juego...',
+    url: 'https://jhon-mantilla.3ztech.com.co/'
   },
   {
-    imagen: 'https://3ztech.com.co/wp-content/uploads/2022/11/pexels-dominika-roseclay-905163-scaled.jpg',
+    imagen: 'https://3ztech.com.co/wp-content/uploads/2022/11/wordpress-scaled.jpg',
     titulo: 'Zhoe Acevedo',
     profesion: 'Tec. Análisis y Desarrollo',
-    descripcion: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus ex autem eos earum ipsam dolorem impedit, et maxime sunt animi voluptatem tenetur odio temporibus eligendi aspernatur id, recusandae iure sint?',
-    url: '#'
+    descripcion: 'Mucho gusto, mi nombre es Zhoe Acevedo y soy tecnóloga en análisis y desarrollo de sistemas de información, estos últimos años me he dedicado al análisis...',
+    url: 'zhoe-acevedo.3ztech.com.co'
   }
 ];
 
